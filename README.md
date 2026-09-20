@@ -157,4 +157,3 @@ J Presence accepts and stores only the deliberately short fields above. It has n
 ## License
 
 MIT
-
