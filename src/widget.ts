@@ -1,4 +1,4 @@
-export const PRESENCE_WIDGET_URI = "ui://j-presence/presence-v1.html";
+export const PRESENCE_WIDGET_URI = "ui://j-presence/presence-v2.html";
 
 export const presenceWidgetHtml = String.raw`<!doctype html>
 <html lang="en">
@@ -55,7 +55,15 @@ export const presenceWidgetHtml = String.raw`<!doctype html>
     }
     .presence:hover { box-shadow: 0 15px 34px rgba(67,83,108,.16), 0 2px 7px rgba(67,83,108,.09); }
     .presence:focus-visible { outline: 2px solid rgba(88,118,184,.55); outline-offset: 2px; }
-    .presence.expanded { min-height: 100px; align-items: start; }
+    .presence.expanded {
+      min-height: 100px;
+      align-items: start;
+      background: linear-gradient(135deg, rgba(255,255,255,.72), rgba(237,243,249,.48));
+      box-shadow: 0 9px 22px rgba(67,83,108,.10), 0 1px 4px rgba(67,83,108,.06);
+      backdrop-filter: blur(22px) saturate(122%);
+      -webkit-backdrop-filter: blur(22px) saturate(122%);
+    }
+    .presence.expanded:hover { box-shadow: 0 10px 24px rgba(67,83,108,.11), 0 1px 4px rgba(67,83,108,.06); }
     .presence.changed::after { animation: glass-highlight 620ms ease both; }
     .avatar {
       width: 48px;
@@ -84,17 +92,19 @@ export const presenceWidgetHtml = String.raw`<!doctype html>
       transform: translateY(-6px);
     }
     .expanded .secondary, .expanded .detail { display: block; animation: reveal 180ms ease forwards; }
+    .expanded .copy { align-self: start; padding-top: 1px; }
     .secondary {
-      margin-top: 7px;
-      color: #475466;
-      font-size: 13px;
-      line-height: 1.35;
+      margin-top: 10px;
+      color: #3f4b5d;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1.3;
       overflow-wrap: anywhere;
     }
     .secondary.empty { color: #8993a2; }
     .detail {
       margin-top: 3px;
-      color: #7a8596;
+      color: #8490a0;
       font-size: 11px;
       line-height: 1.35;
       overflow-wrap: anywhere;
@@ -112,6 +122,7 @@ export const presenceWidgetHtml = String.raw`<!doctype html>
       box-shadow: inset 0 0 0 2px rgba(255,255,255,.30), 0 1px 3px rgba(57,67,81,.20);
       transform-style: preserve-3d;
     }
+    .expanded .coin { align-self: start; margin-top: 2px; }
     .changed .coin { animation: coin-turn 560ms cubic-bezier(.2,.75,.2,1); }
     @keyframes reveal { to { opacity: 1; transform: translateY(0); } }
     @keyframes glass-highlight {
