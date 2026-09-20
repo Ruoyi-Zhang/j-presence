@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title">
+  <title id="title">J avatar</title>
+  <defs>
+    <linearGradient id="mist" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f8fafc"/>
+      <stop offset="0.52" stop-color="#dce5f1"/>
+      <stop offset="1" stop-color="#9fb1cc"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="64" fill="url(#mist)"/>
+  <circle cx="64" cy="64" r="58" fill="none" stroke="#ffffff" stroke-opacity=".76" stroke-width="2"/>
+  <path d="M79 34v48c0 19-10 28-27 28-8 0-15-2-20-7l8-13c3 3 7 5 11 5 7 0 11-4 11-13V34h17Z" fill="#41506a"/>
+</svg>

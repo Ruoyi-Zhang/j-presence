@@ -1,0 +1,26 @@
+{
+  "name": "j-presence",
+  "version": "0.1.0",
+  "description": "A compact personal presence layer for J in ChatGPT conversations.",
+  "author": {
+    "name": "Ruoyi Zhang",
+    "url": "https://github.com/Ruoyi-Zhang"
+  },
+  "repository": "https://github.com/Ruoyi-Zhang/j-presence",
+  "license": "MIT",
+  "keywords": ["presence", "chatgpt", "mcp"],
+  "interface": {
+    "displayName": "J Presence",
+    "shortDescription": "Keep J visibly present in conversation.",
+    "longDescription": "A compact, server-backed presence surface for J with status, live asides, and a configurable avatar.",
+    "developerName": "Ruoyi Zhang",
+    "category": "Productivity",
+    "capabilities": ["Interactive", "Write"],
+    "defaultPrompt": [
+      "Show J Presence.",
+      "Update J's presence for this conversation."
+    ],
+    "brandColor": "#6F86B8"
+  },
+  "mcpServers": "./.mcp.json"
+}

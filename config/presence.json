@@ -1,0 +1,16 @@
+{
+  "name": "J",
+  "avatarUrl": "asset:assets/j-avatar.svg",
+  "initialStatus": "here",
+  "asideTtlSeconds": 180,
+  "updateCooldownSeconds": 15,
+  "idleAfterSeconds": 900,
+  "idlePhraseCooldownSeconds": 1200,
+  "idlePhrases": [
+    "still here.",
+    "lurking.",
+    "quiet, for once.",
+    "waiting.",
+    "here when you get back."
+  ]
+}

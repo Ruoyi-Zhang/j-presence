@@ -1,0 +1,6 @@
+node_modules/
+dist/
+data/presence-state.json
+data/*.tmp
+.env
+npm-debug.log*
